@@ -1,0 +1,101 @@
+:root
+{
+  --bannerBG: #118d51;
+}
+
+.Banner
+{
+  position: relative;
+  top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bannerBG);
+}
+
+.swiggyGrid
+{
+  display: grid;
+  grid-template-columns: 254px 648px 298px;
+  align-items: center;
+  height: 245px;
+  color: white;
+}
+
+#rLogo
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 254px;
+  height: 156px;
+  border: 1px solid rgba(255,255,255, 0.3);
+}
+
+#rLogo img
+{
+  height: 100px;
+}
+
+#desc
+{
+  padding: 0 55px;
+}
+
+.details
+{
+  display: flex;
+  margin-top: 21px;
+}
+
+#rating
+{
+  padding-right: 35px;
+}
+
+#openClosed
+{
+  padding: 0 35px;
+  border-left: 1px solid rgba(255,255,255, 0.2);
+  border-right: 1px solid rgba(255,255,255, 0.2);
+}
+
+#avgPrice
+{
+  padding-left: 35px;
+}
+
+.actions
+{
+  display: flex;
+  align-items: stretch;
+  position: absolute;
+  bottom: -20px;
+  height: 40px;
+}
+
+.actions div
+{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #3d4152;
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: 0 20px 30px 0 rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 22px;
+  padding: 0 15px;
+}
+
+.actions i
+{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.actions input
+{
+  border: none;
+  width: 192px;
+}

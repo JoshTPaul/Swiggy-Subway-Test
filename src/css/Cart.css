@@ -1,0 +1,19 @@
+
+.Cart
+{
+    grid-column: 3/4;    
+    color: #7e808c;
+}
+
+.Cart h1
+{
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.Cart img
+{
+    width: 100%;
+    margin-bottom: 1em;
+    opacity: 0.5;
+}
