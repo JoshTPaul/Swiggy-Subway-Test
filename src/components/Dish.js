@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import vegSquare from '../assets/images/veg.svg'
+import vegSquare from '../assets/icons/veg.svg'
 
 export default class Dish extends Component {
     render() {

@@ -1,5 +1,6 @@
 header
 {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -20,7 +21,7 @@ header
     width: 122px;
     text-overflow: ellipsis;
 }
-
+/*change to ::after*/
 hr{
     position: absolute;
     width: 122px;
@@ -34,7 +35,7 @@ hr{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    margin-left: 1em;
+    margin: 0 1em;
     width: 160px;
     color: #686b78;
 }
@@ -55,6 +56,16 @@ hr{
     font-size: 14px;
 }
 
+#test:hover #orange
+{
+    color: #fc8019;
+}
+
+#test:hover #black
+{
+    color:rgb(230, 230, 230)
+}
+
 nav
 {
     display: flex;
@@ -63,5 +74,20 @@ nav
 
 nav div
 {
+    display: flex;
     margin-left: 60px;
+}
+
+nav div img
+{
+    margin-right: 0.5em;
+    width: 18px;
+    height: 18px;
+}
+
+#test2
+{
+    position: absolute;
+    bottom: -20px;
+    font-size: 10px;
 }
