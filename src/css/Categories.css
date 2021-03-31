@@ -1,26 +1,31 @@
 .Categories 
 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
     text-align: right;
-    border-right: 1px solid rgba(156, 156, 156, 0.267);
+    padding-top: 56px;
 }
 
 .Categories div
 {
     padding-right: 40px;
+    margin-bottom: 12px;
 }
 
 .Categories a
 {
-    color: black;
+    color: inherit;
     text-decoration: none;
 }
 
-.Categories a:focus, .Categories a:hover
+.Categories a:active
 {
-    color: orange
-}
+    color: var(--orange)
+} 
 
 .Categories div:hover
 {
-    border-right: 4px solid orange;
+    border-right: 4px solid var(--orange);
+    color: var(--orange);
 }

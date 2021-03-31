@@ -1,21 +1,59 @@
 import React, { Component } from 'react'
-import vegSquare from '../assets/icons/veg.svg'
+import vegSquare from '../assets/icons/dish-veg.svg'
+import nonVegSquare from '../assets/icons/dish-nonVeg.svg'
 
-export default class Dish extends Component {
+import {connect, useDispatch} from 'react-redux'
+import {setData} from './redux/actions'
+
+class Dish extends Component {
+    constructor(props)
+    {
+        super(props)
+        this.add = this.add.bind(this)
+    }
+
+    add(event)
+    {
+        this.props.dataToCustomiser(this.props.obj)
+    }
+
     render() {
         return (
-            <div className='Dish'>
+            <li className='Dish'>
                 <div className='DishDesc'>
-                    <img src={vegSquare}/>
-                    <h2>BFF Veg Sub Combo (15 cm, 6 Inch)</h2>
-                    <h3>₹371</h3>
-                    <h4>Buy any two 6" veg sub &amp; get 2 cookie free</h4>
+                    <img src={(this.props.obj.veg)?vegSquare:nonVegSquare}/>
+                    <h2>{this.props.obj.name}</h2>
+                    <h4>₹ {this.props.obj.price}</h4>
+                    <h4>{this.props.obj.desc}</h4>
                 </div>
-                <div className='DishImg'>
-                    <img src='https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gjj06n5ktrxtx1tzmcac' id='yo'/>
-                    <button>ADD</button>
+                <div className="DishRight">
+                    {
+                        (this.props.obj.img !== '')
+                        ?(<div className='DishImg'>
+                            <img src={this.props.obj.img}/>
+                         </div>)
+                        :(false)
+                    }
+                    <div className='DishAction flex-col-center'>
+                        <button onClick={this.add}>ADD</button>
+                        <h6>Customisable</h6>
+                    </div>
                 </div>
-            </div>
+            </li>
         )
     }
 }
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        dataToCustomiser: (data) => dispatch(setData(data))
+    }
+}
+
+// const mapStateToProps = (state) => {
+//     return {
+//         data: state.anotherThing
+//     }
+// }
+
+export default connect(null, mapDispatchToProps)(Dish)

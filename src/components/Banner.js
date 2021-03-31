@@ -1,45 +1,72 @@
 import React, {Component} from 'react'
 import rLogo from '../assets/images/subwayLogo.webp'
+import chevron from '../assets/icons/banner-chevronWhite.svg'
+import offerIcon from '../assets/icons/banner-offers.svg'
 
 class Banner extends Component
 {
+    constructor(props)
+    {
+        super(props);
+        //this.state's properties would be retrieved from the backend using a diff method. This is just here as an example
+        this.state = 
+        {
+            id: '00example00',
+            rName: 'Subway',
+            rLogo: '../images/subwayLogo.webp',
+            categories: 'Fast Food, Salads, Snacks, Desserts, Beverages',
+            location: 'Central Bangalore, Central Bangalore',
+            rating: 4.4,
+            deliveryTime: '31 mins',
+            avgPrice: '350',
+            offers: ['20% off up to ₹50 | Use code SWIGGYIT', 'Free delivery up to ₹30 on orders above ₹149 | Use code FREEDEL']
+        }
+    }
+
     render()
     {
-        //maybe change Banner div to header or section?
+        const offers = this.state.offers.map( (item, index) => {
+            return(
+                <li key={'offer'+index}><img src={offerIcon}/>{item}</li>
+            )
+        })
         return (
         <section className='Banner'>
             <div className='swiggyGrid'>
                 <div id='rLogo'>
-                    <img src={rLogo} alt='Restaurant Logo'/>
+                    <img src={this.state.rLogo} alt={this.state.rName}/>
                 </div>
                 <div id='desc'>
-                    <h1 id='rName'>Subway</h1>     
-                    <h5 id='categories'>Fast Food, Salads, Snacks, Desserts, Beverages</h5> 
-                    <h5 id='location'>Central Bangalore, Central Bangalore | Change Outlet ARROW</h5>  
-                    <div class='details'>
+                    <h1 id='rName'>{this.state.rName}</h1>     {/*Subway*/}
+                    <h4 id='categories'>{this.state.categories}</h4> 
+                    <h4 id='location'>{this.state.location} | <span>Change Outlet <img src={chevron}/></span> </h4>  
+                    <div className='details'>
                             <div id='rating'>
-                                <h4><i class="fas fa-star"></i> 4.4</h4>
+                                <h3><i className="fas fa-star fa-sm"></i> {this.state.rating}</h3>
                                 <h6>100+ Ratings</h6>
                             </div>
                             <div id='openClosed'>
-                                <h4>Closed</h4>
-                                <h6>For Delivery</h6>
+                                <h3>{this.state.deliveryTime}</h3>
+                                <h6>Delivery Time</h6>
                             </div>
                             <div id='avgPrice'>
-                                <h4>₹ 350</h4>
+                                <h3>₹ {this.state.avgPrice}</h3>
                                 <h6>Cost for two</h6>
                             </div>
                     </div>  
-                    <div class='actions'>
+                    <div className='actions'>
                         <div id='dishSearch'>
-                            <i class="fas fa-search"></i>
+                            <i className="fas fa-search"></i>
                             <input type='text' placeholder='Search for dishes...'/>
                         </div>
-                        <div id='veg'><i class="far fa-square"></i>Veg Only</div>
-                        <div id='fav'><i class="far fa-heart"></i>Favourite</div>
+                        <div id='veg'><i className="far fa-square"></i>Veg Only</div>
+                        <div id='fav'><i className="far fa-heart"></i>Favourite</div>
                     </div>  
                 </div>
-                {/*<div id='offers'>Offers</div>*/}
+                <aside className='offersBox'>
+                    <div id='offersHeading'>OFFER</div>
+                    <ul>{offers}</ul>
+                </aside>
             </div>
         </section>
         )

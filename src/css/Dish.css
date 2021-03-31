@@ -1,24 +1,79 @@
 .DishList
 {
     grid-column: 2/3;
-    padding: 0 55px;
+    padding: 48px 55px 0;
+    border-left: 1px solid var(--borderGrey);;
 }
+
+.DishList h1
+{
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.DishList h5
+{
+    padding-bottom: 24px;
+    color: var(--grey)
+}
+
+
+
 
 .Dish
 {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid var(--borderGrey);
+    margin-bottom: 44px;
+    padding-bottom: 12px;
 }
+
+.Dish:last-of-type
+{
+    border-bottom: 2px solid black;
+    padding-bottom: 24px;
+}
+
+.Dish h4:last-of-type
+{
+    color: var(--grey)
+}
+
+
+
+.DishDesc img
+{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 0.5em;
+}
+
+
+
+.DishRight
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    text-align: center;
+}
+
 .DishImg
 {
     position: relative;
     width: 128px;
     height: 108px;
+    margin-bottom: -1rem;
+    
 }
 
 .DishImg img
 {
-    width: 128px;
+    width: inherit;
     border-radius: 5px;
 }
 
@@ -29,32 +84,31 @@
     position: absolute;
     border-radius: 5px;
     width: inherit;
-    height: inherit ;
+    height: inherit;
 }
 
-.DishImg button
+
+
+
+
+
+.DishRight button
 {
-    position: absolute;
+    position: relative;
     background-color: white;
-    color: green;
-    left: 16px;
-    bottom: -16px;
+    color: var(--green);
+    cursor: pointer;
     width: 96px;
     height: 32px;
-    border: 1px solid rgba(0, 161, 13, 0.397);
+    border: 1px solid var(--borderGrey);
+    font-size: 12px;
+    font-weight: 600;
 }
 
-.DishImg button::after
+.DishRight button::after
 {
     content: '+';
     position: absolute;
     top: 0;
     right: 2px;
-}
-
-.DishDesc img
-{
-    width: 16px;
-    height: 16px;
-    margin-bottom: 0.5em;
 }
