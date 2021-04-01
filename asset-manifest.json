@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Swiggy-Subway-Test/static/css/main.e85108c1.chunk.css",
+    "main.js": "/Swiggy-Subway-Test/static/js/main.e9781faa.chunk.js",
+    "main.js.map": "/Swiggy-Subway-Test/static/js/main.e9781faa.chunk.js.map",
+    "runtime-main.js": "/Swiggy-Subway-Test/static/js/runtime-main.03cd243a.js",
+    "runtime-main.js.map": "/Swiggy-Subway-Test/static/js/runtime-main.03cd243a.js.map",
+    "static/js/2.fe9e236d.chunk.js": "/Swiggy-Subway-Test/static/js/2.fe9e236d.chunk.js",
+    "static/js/2.fe9e236d.chunk.js.map": "/Swiggy-Subway-Test/static/js/2.fe9e236d.chunk.js.map",
+    "index.html": "/Swiggy-Subway-Test/index.html",
+    "static/css/main.e85108c1.chunk.css.map": "/Swiggy-Subway-Test/static/css/main.e85108c1.chunk.css.map",
+    "static/js/2.fe9e236d.chunk.js.LICENSE.txt": "/Swiggy-Subway-Test/static/js/2.fe9e236d.chunk.js.LICENSE.txt",
+    "static/media/banner-chevronWhite.da2e2046.svg": "/Swiggy-Subway-Test/static/media/banner-chevronWhite.da2e2046.svg",
+    "static/media/banner-offers.9f496acb.svg": "/Swiggy-Subway-Test/static/media/banner-offers.9f496acb.svg",
+    "static/media/cartEmpty.60834114.webp": "/Swiggy-Subway-Test/static/media/cartEmpty.60834114.webp",
+    "static/media/dish-nonVeg.a246aa86.svg": "/Swiggy-Subway-Test/static/media/dish-nonVeg.a246aa86.svg",
+    "static/media/dish-veg.2d426882.svg": "/Swiggy-Subway-Test/static/media/dish-veg.2d426882.svg",
+    "static/media/header-chevronOrange.95f55b38.svg": "/Swiggy-Subway-Test/static/media/header-chevronOrange.95f55b38.svg",
+    "static/media/header-logo.94eac957.svg": "/Swiggy-Subway-Test/static/media/header-logo.94eac957.svg",
+    "static/media/nav-cart.537ef780.svg": "/Swiggy-Subway-Test/static/media/nav-cart.537ef780.svg",
+    "static/media/nav-help.4381fbcf.svg": "/Swiggy-Subway-Test/static/media/nav-help.4381fbcf.svg",
+    "static/media/nav-offers.daea1f37.svg": "/Swiggy-Subway-Test/static/media/nav-offers.daea1f37.svg",
+    "static/media/nav-search.ea4eacf1.svg": "/Swiggy-Subway-Test/static/media/nav-search.ea4eacf1.svg",
+    "static/media/nav-signIn.4a8ff5b0.svg": "/Swiggy-Subway-Test/static/media/nav-signIn.4a8ff5b0.svg",
+    "static/media/subwayLogo.c3480bb7.webp": "/Swiggy-Subway-Test/static/media/subwayLogo.c3480bb7.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03cd243a.js",
+    "static/js/2.fe9e236d.chunk.js",
+    "static/css/main.e85108c1.chunk.css",
+    "static/js/main.e9781faa.chunk.js"
+  ]
+}
