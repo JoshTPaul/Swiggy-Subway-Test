@@ -11,21 +11,21 @@ import Cart from './Cart'
 import DishList from './DishList'
 import Categories from './Categories'
 import Customiser from './Customiser'
+import { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <NavBar/>
-      <Banner/>
-      <main>
-        <Categories/>
-        <DishList/>
-        <Cart/>
-      </main>
-      
-      <Customiser/>
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <NavBar/>
+        <Banner/>
+        <main>
+          <Categories/>
+          <DishList/>
+          <Cart/>
+        </main>   
+        <Customiser/>
     </div>
-  );
+    )
+  }
 }
-
-export default App;

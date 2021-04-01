@@ -1,11 +1,18 @@
 const initialState = {
-    data: {}
+    uData: {},
+    rData: {},
+    customiser: {}
 }
 
 export default (state=initialState, action) => {
     switch(action.type)
     {
-        case 'something': return {...state, data:action.payload}
+        case 'CUSTOMISE': 
+            return {...state, customiser: action.addOns};
+        case 'SET-UDATA':
+            return {...state, uData: action.uData};
+        case 'SET-RDATA':
+            return {...state, rData: action.rData};
         default: return state
     }
 }

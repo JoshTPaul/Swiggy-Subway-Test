@@ -3,9 +3,6 @@ import Dish from './Dish'
 import subwayData from '../assets/subwayData'
 
 export default class DishList extends Component {
-    constructor(props){
-        super(props)
-    }
     render() {
         const dishList = subwayData.dishList
         const groups = Object.keys(dishList).map(item=>{

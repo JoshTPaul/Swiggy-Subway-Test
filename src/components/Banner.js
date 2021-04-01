@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import rLogo from '../assets/images/subwayLogo.webp'
 import chevron from '../assets/icons/banner-chevronWhite.svg'
 import offerIcon from '../assets/icons/banner-offers.svg'
 
@@ -13,7 +12,7 @@ class Banner extends Component
         {
             id: '00example00',
             rName: 'Subway',
-            rLogo: '../images/subwayLogo.webp',
+            rLogo: 'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/subway_020_ooxsox',
             categories: 'Fast Food, Salads, Snacks, Desserts, Beverages',
             location: 'Central Bangalore, Central Bangalore',
             rating: 4.4,
@@ -27,7 +26,7 @@ class Banner extends Component
     {
         const offers = this.state.offers.map( (item, index) => {
             return(
-                <li key={'offer'+index}><img src={offerIcon}/>{item}</li>
+                <li key={'offer'+index}><img src={offerIcon} alt=''/>{item}</li>
             )
         })
         return (
@@ -39,7 +38,7 @@ class Banner extends Component
                 <div id='desc'>
                     <h1 id='rName'>{this.state.rName}</h1>     {/*Subway*/}
                     <h4 id='categories'>{this.state.categories}</h4> 
-                    <h4 id='location'>{this.state.location} | <span>Change Outlet <img src={chevron}/></span> </h4>  
+                    <h4 id='location'>{this.state.location} | <span>Change Outlet <img src={chevron} alt='v'/></span> </h4>  
                     <div className='details'>
                             <div id='rating'>
                                 <h3><i className="fas fa-star fa-sm"></i> {this.state.rating}</h3>

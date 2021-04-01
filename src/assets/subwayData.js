@@ -1,7 +1,7 @@
 const subwayData = {
     id: '00example00',
     rName: 'Subway',
-    rLogo: '../images/subwayLogo.webp',
+    rLogo: 'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/subway_020_ooxsox',
     categories: 'Fast Food, Salads, Snacks, Desserts, Beverages',
     location: 'Central Bangalore, Central Bangalore',
     rating: 4.4,
@@ -15,7 +15,45 @@ const subwayData = {
                 price: 371,
                 desc: 'Buy any two 6" veg sub & get 2 cookie free',
                 img: 'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gjj06n5ktrxtx1tzmcac',
-                veg: true
+                veg: true,
+                addOns: [
+                    {
+                        name: 'Choice of Bread',
+                        items: ['Multigrain Bread', 'Multigrain Honey Oats Bread', 'Italian Bread', 'Roasted Garlic Bread', 'Parmesan Oregano Bread', 'Flat Bread'],
+
+                        optional: false,
+                        priced: false
+                    },
+                    {
+                        name: 'Choice of Preperation',
+                        items: ['Plain Bread', 'Plain Bread with Cheese Slice', 'Toasted Bread', 'Toasted Bread with Cheese Slice', 'Toasted with Mozzarella Cheese'],
+
+                        optional: false,
+                        priced: false
+                    },
+                    {
+                        name: 'Choice of Vegetables',
+                        items: ['Lettuce', 'Tomato', 'Cucumber', 'Pickle', 'Olives'],
+
+                        optional: true,
+                        priced: false
+                    },
+                    {
+                        name: 'Add On',
+                        items: ['Veg Protein', 'Cheese Slice', 'Mozzarella Cheese'],
+
+                        optional: true,
+                        priced: false
+                    },
+                    {
+                        name: 'Choice of Sauce Any(3)',
+                        items: ['Mayonnaise', 'Mint Mayonnaise', 'Honey Mustard', 'Red Chilli', 'Marinara'],
+
+                        optional: true,
+                        priced: false
+                    }
+
+                ]
             },
             {
                 name: 'BFF Non-Veg Sub Combo (15 cm, 6 Inch)',

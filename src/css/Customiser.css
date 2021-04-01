@@ -5,6 +5,9 @@
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.25);
     width: 100vw;
@@ -13,7 +16,112 @@
 
 #Customiser
 {
-    width: 100px;
-    height: 100px;
-    background-color: green;
+    background-color: white;
+    padding: 32px 24px 8px;
+    max-width: 600px;
+}
+
+#Customiser img
+{
+    margin-top: 4px;
+    width: 12px;
+    height: 12px;
+}
+
+#Customiser h1
+{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#Customiser h3
+{
+    font-weight: 300;
+}
+
+#Customiser-top
+{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    border-bottom: 1px dotted var(--grey);
+    margin-bottom: 8px;
+}
+
+#Customiser-top div
+{
+    position: relative;
+    margin-left: 12px;
+}
+
+#Customiser-top button
+{
+   
+   border: none; 
+   background-color: white;
+   color: var(--grey);
+   font-size: 20px;
+   cursor: pointer;
+}
+
+#Customiser-titles
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+#Customiser-titles div
+{
+    margin-right: 16px;
+}
+
+#Customiser-titles div::after
+{
+    display: inline-block;
+    content: '';
+    position: relative;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+#Customiser-items 
+{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#Customiser-items div
+{
+    padding: 16px;
+}
+
+#Customiser-items label
+{
+    display: block;
+}
+
+#Customiser-submit
+{
+    padding: 16px;
+    color: white
+}
+
+#Customiser-submit div
+{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    background-color: var(--green);
+    padding: 16px;
+    cursor: pointer;
+}
+
+#Customiser-submit h3
+{
+    font-weight: 700;
 }
